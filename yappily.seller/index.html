@@ -8,9 +8,15 @@
 	<script type="text/javascript" src="js/lib/angular.min.js"></script>
 	<script type="text/javascript" src="js/home.module.js"></script>
 	<script type="text/javascript" src="js/app.module.js"></script>
+	<script type="text/javascript" src="js/home.controller.js"></script>
+	<script type="text/javascript" src="js/header.directive.js"></script>
+	<script type="text/javascript" src="js/categoryBar.directive.js"></script>
+	<script type="text/javascript" src="js/item.directive.js"></script>
+	<script type="text/javascript" src="js/footer.directive.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/lib/bootstrap.min.css">
 </head>
-<body ng-app="app.module.js">
-	<div class="container" ng-controller="home.controller.js">
+<body ng-app="app">
+	<div class="container" ng-controller="HomeCtrl">
 		
 		<header logo="sellerData.logoUrl" header-image="sellerData.sellerName" seller-name="sellerData.name" seller-info="sellerData.sellerTagline" followers="sellerData.followers" sold-items="sellerData.itemsSold"></header>
 		<category-bar seller-tags="sellerData.tags"></category-bar>

@@ -1,0 +1,37 @@
+<div ng-repeat="(category, categoryItem) in sellerItem">
+	<div ng-repeat="item in categoryItem">
+		
+		<div>
+			<img ng-src="{{item.logoUrl}}">
+			<div>
+				<h3>{{item.sellerName}}</h3>
+				<p>{{item.postTime}} mins ago</p>
+			</div>
+			<i class="fa fa-heart-o" aria-hidden="true"></i>
+		</div>
+
+		<div>
+			<img ng-src="item.itemIcon"> 
+			<img ng-src="item.imageUrl">
+			<button></button>
+		</div>
+
+		<div>
+			<div>
+				<div>
+					<p>{{item.likes}} Likes</p>
+				</div>
+				<div>
+					<p>{{item.comments}} Comments</p>
+				</div>
+			</div>
+			<div>
+				<div>
+					<img ng-src="{{item.commentImg}}">
+					<p>{{comment}}</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>

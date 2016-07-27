@@ -1,46 +1,64 @@
-<div ng-repeat="(category, categoryItem) in sellerItem">
-	<div ng-repeat="item in categoryItem">
-		
-		<div>
-			<img ng-src="{{item.logoUrl}}">
-			<div>
-				<h3>{{item.sellerName}}</h3>
-				<p>{{item.postTime}} mins ago</p>
-			</div>
-			<i class="fa fa-heart-o" aria-hidden="true"></i>
-		</div>
+<div class="row" ng-repeat="(category, categoryItem) in sellerItem">
+	<div class="col-xs-12" id="{{category}}">
+		<div class="row">
+			<div class="col-xs-3" ng-repeat="item in categoryItem">
+				
+				<div class="row">
+					<div class="col-xs-3">
+						<img ng-src="{{item.logoUrl}}">
+					</div>	
+					<div class="col-xs-6">
+						<h3>{{item.sellerName}}</h3>
+						<p>{{item.postTime}} mins ago</p>
+					</div>
+					<div class="col-xs-3">
+						<i class="fa fa-heart-o" aria-hidden="true"></i>
+					</div>
+				</div>	
 
-		<div>
-			<img ng-src="item.itemIcon"> 
-			<img ng-src="item.imageUrl">
-			<div class="btn-group">
-  			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span><span class="caret"></span></button>
-  			<ul class="dropdown-menu">
-    			<li><a href="#">Send sms from Contacts</a></li>
-    			<li><a href="#">Share via Whatsapp</a></li>
-			    <li><a href="#">Share via Messenger</a></li>
-			    <li role="separator" class="divider"></li>
-			    <li><a href="#">Share</a></li>
-			  </ul>
-			</div>
-		</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<img ng-src="item.itemIcon"> 
+					</div>
+					<div class="col-xs-3">	
+						<img ng-src="item.imageUrl">
+					</div>	
+					<div class="col-xs-3 btn-group">
+		  			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span><span class="caret"></span></button>
+		  			<ul class="dropdown-menu">
+		    			<li><a href="#">Send sms from Contacts</a></li>
+		    			<li><a href="#">Share via Whatsapp</a></li>
+					    <li><a href="#">Share via Messenger</a></li>
+					    <li role="separator" class="divider"></li>
+					    <li><a href="#">Share</a></li>
+					  </ul>
+					</div>	
+				</div>
 
-		<div>
-			<div>
-				<div>
-					<p>{{item.likes}} Likes</p>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-6">
+								<p>{{item.likes}} Likes</p>
+							</div>
+							<div class="col-xs-6">
+								<p>{{item.comments}} Comments</p>
+							</div>
+						</div>	
+					</div>
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-4">
+								<img ng-src="{{item.commentImg}}">
+							</div>
+							<div class="col-xs-8">	
+								<p>{{comment}}</p>
+							</div>	
+						</div>
+					</div>
 				</div>
-				<div>
-					<p>{{item.comments}} Comments</p>
-				</div>
-			</div>
-			<div>
-				<div>
-					<img ng-src="{{item.commentImg}}">
-					<p>{{comment}}</p>
-				</div>
+				
 			</div>
 		</div>
-		
-	</div>
+	</div>		
 </div>

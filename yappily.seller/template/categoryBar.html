@@ -1,4 +1,10 @@
-<div ng-repeat="(tagName, tag) in sellerTags">
-	<img ng-src="{{tag.icon}}">
-	<h3>#{{tagName}}</h3>
-</div>
+<div class="row">
+	<div class="col-xs-3">
+		<i class="fa fa-filter" aria-hidden="true"></i>
+		<h3>Filter:</h3>
+	</div>
+	<div class="col-xs-3" ng-repeat="(tagName, tag) in sellerTags">
+		<img ng-src="{{tag.icon}}">
+		<h3>#{{tagName}}</h3>
+	</div>
+</div>	

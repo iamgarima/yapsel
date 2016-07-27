@@ -1,22 +1,56 @@
-<div>
-	<div data-section="seller-header">
+<div class="row">
+	<div class="col-md-12">
 		<img ng-src="headerImage">
-		<img ng-src="logo">
-		<h2>{{name}}</h2>
-		<p>{{sellerInfo}}</p>
-		<div data-section="star-ratings">
-			<p>Ratings | {{followers}} Followers | {{soldItems}} Items Sold</p>
-		</div>
-		<div data-section="buttons">
-			<button><i class="fa fa-star-empty" aria-hidden="true"></i>
-	Follow</button>
-			<button><i class="fa fa-comments-o" aria-hidden="true"></i>Chat to Buy</button>
-			<button><img src="img/Pay-Seller.png">Pay Seller</button>
-		</div>
 	</div>
-	<div data-section="yappily-logo">
-		<img src="img/Yappily Logo.png">
-		<img src="img/secure.png">
-		<p>Yappily-trusted Seller</p>
-	</div>	
+</div>
+<div class="row">
+	<div class="col-xs-3">
+		<img ng-src="logo">
+	</div>
+	<div class="col-xs-6">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>{{name}}</h2>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-xs-12">
+				<p>{{sellerInfo}}</p>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-xs-12">
+				<p>Ratings | {{followers}} Followers | {{soldItems}} Items Sold</p>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-xs-4">
+				<button><i class="fa fa-star-empty" aria-hidden="true"></i>
+	Follow</button>
+			</div>
+			<div class="col-xs-4">
+				<button><i class="fa fa-comments-o" aria-hidden="true"></i>Chat to Buy</button>
+			</div>
+			<div class="col-xs-4">
+				<button><img src="img/Pay-Seller.png">Pay Seller</button>
+			</div>
+		</div>	
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+			<div class="col-xs-12">
+				<img src="img/Yappily Logo.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<img src="img/secure.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<p>Yappily-trusted Seller</p>
+			</div>
+		</div>	
+	</div>
 </div>

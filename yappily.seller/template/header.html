@@ -48,12 +48,12 @@
   				</div>
 			</div>
 			<div class="col-xs-8">
-				<p>Ratings | {{followers}} Followers | {{soldItems}} Items Sold</p>
+				<p>Ratings | {{follower}} Followers | {{soldItems}} Items Sold</p>
 			</div>
 		</div>	
 		<div class="row">
 			<div class="col-xs-4">
-				<button><i class="fa fa-star-empty" aria-hidden="true"></i>
+				<button ng-click="follower = follower + 1" ng-init="follower={{sellerFollower}}" ><i class="fa fa-star-empty" aria-hidden="true"></i>
 	Follow</button>
 			</div>
 			<div class="col-xs-4">

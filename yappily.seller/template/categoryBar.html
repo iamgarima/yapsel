@@ -1,10 +1,10 @@
-<div class="row">
+<div class="row categoryBar">
 	<div class="col-xs-3">
-		<i class="fa fa-filter" aria-hidden="true"><span>Filter:</span></i>
+		<i class="fa fa-filter" aria-hidden="true"><span class="tagName">Filter:</span></i>
 	</div>
 	<!-- categories -->
 	<div class="col-xs-3" ng-repeat="tag in sellerTags">
-		<a href="#{{tag.name}}"><img class="tagIcon" ng-src="{{tag.icon}}"><span>{{tag.name}}</span></a>
+		<a href="#{{tag.name}}"><img class="tagIcon" ng-src="{{tag.icon}}"><span class="tagName">{{tag.name}}</span></a>
 		
 	</div>
 	<!-- /categories -->

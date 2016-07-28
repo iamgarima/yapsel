@@ -28,18 +28,132 @@
   }
 }
 
-.sellerLogo, .yappilyLogo, .paySeller{
-  width: 60px;
-}
 
-.commentImg, .itemIcon, .logoUrl{
+.logoUrl{
     width: 40px;
 }
 
-.logoUrl{
-  width: 40px !important;
+
+
+
+
+.paySeller {
+  width: 15px !important;
+}
+/************** header.html **************/
+
+.headerImage {
+  width: 100%;
+  height: 300px;
+}
+
+.sellerLogo {
+  padding-top: 20px;
+  width: 60%;
+}
+
+.rating-star {
+    height: 10px !important;
+}
+
+.yappilyLogo {
+    width: 100px;
+}
+
+.secure {
+  width: 20px;
+}
+
+.yappily {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.buttonIcon {
+  padding: 5px;
+}
+
+.buttonRow {
+  height: 30px;
+  width: 130px;
+}
+
+/************** /header.html **************/
+
+/**** categoryBar.html ****/
+
+.categoryBar {
+  padding: 30px;
 }
 
 .tagIcon {
   width: 20px;
+  padding-right: 2px;
 }
+
+.tagName {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/**** /categoryBar.html ****/
+
+
+/**** footer ****/
+.footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+/**** /footer ****/
+
+
+/**** itme.html ****/
+
+.itemSection {
+  padding-top: 50px;
+}
+
+.logoUrl{
+  width: 40px !important;
+  border-radius: 50%
+}
+.sellerName {
+  margin: 0;
+}
+
+.heart {
+  height: 30px;
+  width: 30px;
+}
+
+.singleItem {
+  padding: 10px;
+}
+
+.productImg {
+  width:100%;
+  position: relative;
+}
+
+.itemIcon {
+  width: 20px;
+  position: absolute;
+  top:0;
+  left:0px;
+}
+
+.btn-group {
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+.commentImg {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.textComment {
+  padding-left: 0;
+}
+/**** /item.html ****/

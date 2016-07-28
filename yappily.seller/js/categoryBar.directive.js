@@ -4,7 +4,7 @@
 		.directive('categoryBar', function(){
 			return {
 				restrict: 'E',
-				templateUrl: 'categoryBar.html',
+				templateUrl: 'template/categoryBar.html',
 				scope: {
 					sellerTags: '='
 				}

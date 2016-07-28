@@ -1,13 +1,13 @@
 <!-- ********** items-section********** -->
 <div class="row" ng-repeat="(category, categoryItem) in sellerItem">
-	<div class="col-xs-12" id="{{category}}">
+	<section class="col-xs-12" id="{{category}}">
 		<div class="row">
 			<div class="col-xs-3" ng-repeat="item in categoryItem">
 
 				<!-- ****first-row having seller-info**** -->
 				<div class="row">
 					<div class="col-xs-3">
-						<img ng-src="{{item.logoUrl}}">
+						<img ng-src="{{item.logoUrl}}" class="logoUrl">
 					</div>	
 					<div class="col-xs-6">
 						<h3>{{item.sellerName}}</h3>
@@ -23,19 +23,19 @@
 				<div class="row">
 					<!-- category-icon -->
 					<div class="col-xs-12">
-						<img ng-src="item.itemIcon"> 
+						<img class="itemIcon" ng-src="{{item.itemIcon}}"> 
 					</div>
 					<!-- /category-icon -->
 
 					<!-- product-image -->
 					<div class="col-xs-3">	
-						<img ng-src="item.imageUrl">
+						<img ng-src="{{item.imageUrl}}">
 					</div>	
 					<!-- /product-image -->
 
 					<!-- share-button -->
 					<div class="col-xs-3 btn-group">
-		  			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span><span class="caret"></span></button>
+		  			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
 		  			<ul class="dropdown-menu">
 		    			<li><a href="#">Send sms from Contacts</a></li>
 		    			<li><a href="#">Share via Whatsapp</a></li>
@@ -64,10 +64,10 @@
 					<div class="col-xs-12">
 						<div class="row">
 							<div class="col-xs-4">
-								<img ng-src="{{item.commentImg}}">
+								<img class="commentImg" ng-src="{{item.commentImg}}">
 							</div>
 							<div class="col-xs-8">	
-								<p>{{comment}}</p>
+								<p>{{item.textComment}}</p>
 							</div>	
 						</div>
 					</div>
@@ -77,6 +77,6 @@
 				
 			</div>
 		</div>
-	</div>		
+	</section>		
 </div>
 <!-- **********/items-section********** -->

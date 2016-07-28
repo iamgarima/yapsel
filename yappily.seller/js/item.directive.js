@@ -4,7 +4,7 @@
 		.directive('item', function(){
 			return {
 				restrict: 'E',
-				templateUrl: 'item.html',
+				templateUrl: 'template/item.html',
 				scope: {
 					sellerItem: '='
 				}

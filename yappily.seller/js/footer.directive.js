@@ -2,8 +2,10 @@
 	angular
 		.module('home')
 		.directive('footer', function(){
-			restrict: 'E',
-			templateUrl: 'footer.html',
-			scope: {}
+			return{
+				restrict: 'E',
+				templateUrl: 'template/footer.html',
+				scope: {}
+			};	
 		});
 })();

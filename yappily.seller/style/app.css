@@ -1,3 +1,5 @@
+/* star-ratings styled */
+
 .star-ratings-css {
   unicode-bidi: bidi-override;
   color: #c5c5c5;
@@ -24,4 +26,20 @@
     display: block;
     z-index: 0;
   }
+}
+
+.sellerLogo, .yappilyLogo, .paySeller{
+  width: 60px;
+}
+
+.commentImg, .itemIcon, .logoUrl{
+    width: 40px;
+}
+
+.logoUrl{
+  width: 40px !important;
+}
+
+.tagIcon {
+  width: 20px;
 }

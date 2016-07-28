@@ -4,14 +4,17 @@
 		.directive('header', function(){
 			return {
 				restrict: 'E',
-				templateUrl: 'header.html',
+				templateUrl: 'template/header.html',
 				scope: {
-					logo: '=',
-          headerImage: '=',
-          sellerName: '=',
-          sellerInfo: '=',
-          followers: '=',
-          soldItems: '='
+					  logo: '=',
+			          headerImage: '=',
+			          sellerName: '=',
+			          sellerInfo: '=',
+			          followers: '=',
+			          soldItems: '=',
+			          rating: '='
+				},
+				link: function(scope){
 				}
 			};
 		});

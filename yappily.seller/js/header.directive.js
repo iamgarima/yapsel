@@ -15,6 +15,15 @@
 			          rating: '='
 				},
 				link: function(scope){
+					scope.showFollow = true;
+					scope.incFollow = function(){
+						scope.followers += 1;
+						scope.showFollow = false;
+					}
+					scope.decFollow = function(){
+						scope.followers -= 1;
+						scope.showFollow = true;
+					}
 				}
 			};
 		});

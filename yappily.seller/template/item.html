@@ -1,75 +1,78 @@
-<!-- ********** items-section********** -->
-<div class="row itemSection" ng-repeat="(category, categoryItem) in sellerItem">
-	<section class="col-xs-12" id="{{category}}">
-		<div class="row">
-			<div class="col-xs-3 singleItem" ng-repeat="item in categoryItem">
+<div class="container-fluid headerColor">
+	<!-- ********** items-section********** -->
+	<div class="row itemSection" ng-repeat="(category, categoryItem) in sellerItem">
+		<section class="col-xs-12" id="{{category}}">
+			<div class="row">
+				<div class="col-xs-3 singleItem" ng-repeat="item in categoryItem">
 
-				<!-- ****first-row having seller-info**** -->
-				<div class="row">
-					<div class="col-xs-3">
-						<img ng-src="{{item.logoUrl}}" class="logoUrl">
-					</div>	
-					<div class="col-xs-6">
-						<h3 class="sellerName">{{item.sellerName}}</h3>
-						<p>{{item.postTime}} mins ago</p>
-					</div>
-					<div class="col-xs-3">
-						<button ng-click="count = count + 1" ng-init="count=0"><i class="fa fa-heart-o heart" aria-hidden="true"></i></button>
-					</div>
-				</div>
-				<!-- ****/first-row**** -->
-
-				<!-- ****second-row having product-image, category-icon and share-button-->
-				<div class="row">
-					<div class="col-xs-12 productImg">
-						<img class="" ng-src="{{item.imageUrl}}">
-						<div class="col-xs-3 itemIcon">
-							<img class="" ng-src="{{item.itemIcon}}">	
+					<!-- ****first-row having seller-info**** -->
+					<div class="row firstRowColor">
+						<div class="col-xs-3">
+							<img ng-src="{{item.logoUrl}}" class="logoUrl">
 						</div>	
-						<div class="col-xs-3 btn-group">
-		  					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
-		  					<ul class="dropdown-menu">
-				    			<li><a href="#">Send sms from Contacts</a></li>
-				    			<li><a href="#">Share via Whatsapp</a></li>
-							    <li><a href="#">Share via Messenger</a></li>
-							    <li role="separator" class="divider"></li>
-							    <li><a href="#">Share</a></li>
-					  		</ul>
-						</div> 
-					</div>
-				</div>
-				<!-- ****/second-row**** -->
-
-				<!-- ****third-row having comments and likes**** -->
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="row">
-							<div class="col-xs-6">
-								<p>{{count}} Likes</p>
-							</div>
-							<div class="col-xs-6">
-								<p>{{item.comments}} Comments</p>
-							</div>
-						</div>	
-					</div>
-					<!-- comment -->
-					<div class="col-xs-12">
-						<div class="row">
-							<div class="col-xs-3">
-								<img class="commentImg" ng-src="{{item.commentImg}}">
-							</div>
-							<div class="col-xs-9 textComment">	
-								<p>{{item.textComment}}</p>
-							</div>	
+						<div class="col-xs-6">
+							<h3 class="sellerName">{{item.sellerName}}</h3>
+							<p>{{item.postTime}} mins ago</p>
+						</div>
+						<div class="col-xs-3">
+							<button ng-show="noColor" ng-click="incLike()" class="itemButton btn btn-default"><i class="fa fa-heart-o heart" aria-hidden="true"></i></button>
+							<button ng-hide="noColor" ng-click="decLike()" class="itemButtonH btn btn-default"><i class="fa fa-heart-o heart" aria-hidden="true"></i></button>
 						</div>
 					</div>
-					<!-- /comment -->
+					<!-- ****/first-row**** -->
+
+					<!-- ****second-row having product-image, category-icon and share-button-->
+					<div class="row secondRowColor">
+						<div class="col-xs-12 productImg">
+							<img class="" ng-src="{{item.imageUrl}}">
+							<div class="col-xs-3 itemIcon">
+								<img class="" ng-src="{{item.itemIcon}}">	
+							</div>	
+							<div class="col-xs-3 btn-group">
+			  					<button type="button" class="btn btn-default dropdown-toggle itemButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+			  					<ul class="dropdown-menu">
+					    			<li><a href="#">Send sms from Contacts</a></li>
+					    			<li><a href="#">Share via Whatsapp</a></li>
+								    <li><a href="#">Share via Messenger</a></li>
+								    <li role="separator" class="divider"></li>
+								    <li><a href="#">Share</a></li>
+						  		</ul>
+							</div> 
+						</div>
+					</div>
+					<!-- ****/second-row**** -->
+
+					<!-- ****third-row having comments and likes**** -->
+					<div class="row thirdRowColor">
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-xs-6">
+									<p>{{like}} Likes</p>
+								</div>
+								<div class="col-xs-6">
+									<p>{{item.comments}} Comments</p>
+								</div>
+							</div>	
+						</div>
+						<!-- comment -->
+						<div class="col-xs-12 commentSection">
+							<div class="row commentColor">
+								<div class="col-xs-3">
+									<img class="commentImg" ng-src="{{item.commentImg}}">
+								</div>
+								<div class="col-xs-9 textComment">	
+									<p>{{item.textComment}}</p>
+								</div>	
+							</div>
+						</div>
+						<!-- /comment -->
+					</div>
+					<!-- ****/third-row**** -->
+					
 				</div>
-				<!-- ****/third-row**** -->
-				
 			</div>
-		</div>
-		<p>__________________________________________________________________________________________________________________________________________________</p>
-	</section>		
-</div>
-<!-- **********/items-section********** -->
+			<p>__________________________________________________________________________________________________________________________________________________</p>
+		</section>		
+	</div>
+	<!-- **********/items-section********** -->
+</div>	

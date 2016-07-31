@@ -1,96 +1,98 @@
-<!-- *************seller header-image************* -->
-<div class="row">
-	<div class="col-md-12">
-		<img class="headerImage img-responsive" ng-src="{{headerImage}}">
-	</div>
-</div>
-<!-- *************/seller header-image************* -->
-
-
-
-<!-- *************seller-info************* -->
-<div class="row">
-
-	<!-- ****seller-logo**** -->
-	<div class="col-xs-3" style="text-align: center;">
-		<img class="sellerLogo" ng-src="{{logo}}">
-	</div>
-
-
-	<!-- ****seller-name and description**** -->
-	<div class="col-xs-6">
-		<div class="row">
-			<div class="col-xs-12">
-				<h2>{{sellerName}}</h2>
-			</div>
-		</div>	
-		<div class="row">
-			<div class="col-xs-12">
-				<p>{{sellerInfo}}</p>
-			</div>
-		</div>	
-		<div class="row">
-			<div class="col-xs-4 star-ratings-css">
-	  			<div class="star-ratings-css-top" style="width: {{rating}}%">
-	  				<span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">★</span>
-  				</div>
-  				<!-- <div class="star-ratings-css-bottom">
-  					<span>★</span>
-  					<span>★</span>
-  					<span>★</span>
-  					<span>★</span>
-  					<span>★</span>
-  				</div> -->
-			</div>
-			<div class="col-xs-8">
-				<p>Ratings | {{followers}} Followers | {{soldItems}} Items Sold</p>
-			</div>
-		</div>	
-		<div class="row">
-			<div class="col-xs-3">
-				<button class="buttonRow btn btn-default" ng-show="showFollow" ng-click="incFollow()"><i class="fa fa-star buttonIcon" aria-hidden="true"></i>Follow</button>
-				<button class="buttonRow btn btn-default" ng-hide="showFollow" ng-click="decFollow()"><i class="fa fa-star buttonIcon" aria-hidden="true"></i>Unfollow</button>
-			</div>
-			<div class="col-xs-3">
-				<button class="buttonRow"><i class="fa fa-comments-o buttonIcon" aria-hidden="true"></i>Chat to Buy</button>
-			</div>
-			<div class="col-xs-3">
-				<button class="buttonRow"><img class="paySeller buttonIcon" src="img/Pay-Seller.png">Pay Seller</button>
-			</div>
-		</div>	
-	</div>
-	<!-- ****/seller-name and description**** -->
-
-	
-	<!-- ****yappily**** -->
-	<div class="col-xs-3" class="yappily" style="text-align: center; padding-top: 20px;">
-
-		<!-- yappily-logo -->
-		<div class="row">
-			<div class="col-xs-12">
-				<img class="yappilyLogo" src="img/Yappily Logo.png">
-			</div>
+<div class="container-fluid headerColor">
+	<!-- *************seller header-image************* -->
+	<div class="row">
+		<div class="col-md-12">
+			<img class="headerImage img-responsive" ng-src="{{headerImage}}">
 		</div>
-		<!-- /yappily-logo -->
-
-		<!-- secure-icon -->
-		<div class="row">
-			<div class="col-xs-12">
-				<img class="secure" src="img/Secure.png">
-			</div>
-		</div>
-		<!-- /secure-icon -->
-
-		<!-- tag-line --> 
-		<div class="row">
-			<div class="col-xs-12">
-				<p>Yappily-trusted Seller</p>
-			</div>
-		</div>
-		<!-- /tag-line -->	
-
 	</div>
-	<!-- ****/yappily**** -->
-	
-</div>
-<!-- *************/seller-info************* -->
+	<!-- *************/seller header-image************* -->
+
+
+
+	<!-- *************seller-info************* -->
+	<div class="row">
+
+		<!-- ****seller-logo**** -->
+		<div class="col-xs-3" style="text-align: center;">
+			<img class="sellerLogo" ng-src="{{logo}}">
+		</div>
+
+
+		<!-- ****seller-name and description**** -->
+		<div class="col-xs-6">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>{{sellerName}}</h2>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12">
+					<p>{{sellerInfo}}</p>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-xs-4 star-ratings-css">
+		  			<div class="star-ratings-css-top" style="width: {{rating}}%">
+		  				<span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">★</span><span class="rating-star">★</span>
+	  				</div>
+	  				<!-- <div class="star-ratings-css-bottom">
+	  					<span>★</span>
+	  					<span>★</span>
+	  					<span>★</span>
+	  					<span>★</span>
+	  					<span>★</span>
+	  				</div> -->
+				</div>
+				<div class="col-xs-8">
+					<p>Ratings | {{followers}} Followers | {{soldItems}} Items Sold</p>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-xs-3">
+					<button class="buttonRow btn btn-default" ng-show="showFollow" ng-click="incFollow()"><i class="fa fa-star buttonIcon" aria-hidden="true"></i><span class="buttonRowText">Follow</span></button>
+					<button class="buttonRow btn btn-default" ng-hide="showFollow" ng-click="decFollow()"><i class="fa fa-star buttonIcon" aria-hidden="true"></i><span class="buttonRowText">Unfollow</span></button>
+				</div>
+				<div class="col-xs-3">
+					<button class="buttonRow btn btn-default"><i class="fa fa-comments-o buttonIcon" aria-hidden="true"></i><span class="buttonRowText">Chat to Buy</span></button>
+				</div>
+				<div class="col-xs-3">
+					<button class="buttonRow btn btn-default"><img class="paySeller buttonIcon" src="img/Pay-Seller.png"><span class="buttonRowText">Pay Seller</span></button>
+				</div>
+			</div>	
+		</div>
+		<!-- ****/seller-name and description**** -->
+
+		
+		<!-- ****yappily**** -->
+		<div class="col-xs-3" class="yappily" style="text-align: center; padding-top: 20px;">
+
+			<!-- yappily-logo -->
+			<div class="row">
+				<div class="col-xs-12">
+					<img class="yappilyLogo" src="img/Yappily Logo.png">
+				</div>
+			</div>
+			<!-- /yappily-logo -->
+
+			<!-- secure-icon -->
+			<div class="row">
+				<div class="col-xs-12">
+					<img class="secure" src="img/Secure.png">
+				</div>
+			</div>
+			<!-- /secure-icon -->
+
+			<!-- tag-line --> 
+			<div class="row">
+				<div class="col-xs-12">
+					<p>Yappily-trusted Seller</p>
+				</div>
+			</div>
+			<!-- /tag-line -->	
+
+		</div>
+		<!-- ****/yappily**** -->
+		
+	</div>
+	<!-- *************/seller-info************* -->
+</div>	

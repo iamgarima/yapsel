@@ -49,6 +49,7 @@
 
 .sellerLogo {
   padding-top: 20px;
+  padding-bottom: 20px;
   width: 60%;
 }
 
@@ -76,6 +77,16 @@
 .buttonRow {
   height: 30px;
   width: 130px;
+  background-color: #ff6600;
+  border-color: #ff6600;
+}
+
+.buttonRowText {
+  color: white;
+}
+
+.headerColor {
+  background-color: #DEDEDE;
 }
 
 /************** /header.html **************/
@@ -83,17 +94,21 @@
 /**** categoryBar.html ****/
 
 .categoryBar {
-  padding: 30px;
+  padding: 10px;
 }
 
 .tagIcon {
   width: 20px;
-  padding-right: 2px;
+  margin: 6px;
 }
 
 .tagName {
   font-size: 20px;
   font-weight: bolder;
+}
+
+.categoryBarColor {
+  background-color: #F1F1F1;
 }
 
 /**** /categoryBar.html ****/
@@ -107,10 +122,30 @@
 /**** /footer ****/
 
 
-/**** itme.html ****/
+/**** item.html ****/
+
+.itemButtonH {
+  background-color: #ff6600;
+}
+
+.commentSection {
+  background-color: white;
+  padding: 5px;
+}
+
+.itemButton {
+  background: transparent;
+  border-color: transparent;
+}
+
+.commentColor {
+  background-color: #DEDEDE;
+}
 
 .itemSection {
   padding-top: 50px;
+  padding-left:20px;
+  padding-right: 20px;
 }
 
 .logoUrl{
@@ -121,6 +156,14 @@
   margin: 0;
 }
 
+.firstRowColor, .secondRowColor, .thirdRowColor {
+  background-color: white;
+}
+
+.firstRowColor {
+  padding: 5px;
+}
+
 .heart {
   height: 30px;
   width: 30px;
@@ -128,6 +171,7 @@
 
 .singleItem {
   padding: 10px;
+  background-color: #DEDEDE;
 }
 
 .productImg {
@@ -149,11 +193,14 @@
 }
 
 .commentImg {
-  width: 40px;
+  width: 50px;
   border-radius: 50%;
+  padding: 5px;
 }
 
 .textComment {
   padding-left: 0;
+  padding-top: 5px;
+  padding-bottom: 5px; 
 }
 /**** /item.html ****/
